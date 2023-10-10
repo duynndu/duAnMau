@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.form_box {
+    border-radius: 10px;
+    width: 371px;
+    display: flex;
+    background: rgba(255, 255, 255);
+}
+form {
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 290px;
+    padding: 40px;
+    flex-shrink: 0;
+    transition: all 0.5s linear;
+    background: transparent;
+    box-shadow: 0 0 3px 0 rgb(0, 0, 0);
+    transform: translateX(0);
+}
+
+.left {
+    transform: translateX(-370px);
+}
+button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#register {
+}
+#login {
+}
+
+.form_box h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+}
+.form_control {
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.form_control input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 2px solid rgb(164, 155, 155);
+    height: 40px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+.form_control input::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+.form_control span {
+    position: absolute;
+    left: 0;
+    top: 38px;
+    border-bottom: 3px solid rgb(0, 13, 255);
+    width: 0;
+    height: 0;
+    transition: 1s;
+}
+.form_control input:focus ~ span {
+    width: 100%;
+}
+.form_control.error input {
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+.form_control.error small {
+    color: red;
+}
+.Register {
+    text-align: center;
+    margin-top: 50px;
+}
+.Register button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgb(88, 101, 241);
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 500;
+    color: white;
+}
+.Register p {
+    font-size: 17px;
+}
+.Register p {
+    color: rgb(0, 0, 0);
+}
+.Register p span a {
+    color: rgb(0, 4, 255);
+}

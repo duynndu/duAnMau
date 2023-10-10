@@ -1,0 +1,158 @@
+:root{
+    --primaryColor: #0a437f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+}
+.space-30{
+    height: 30px;
+}
+header{
+    background: var(--primaryColor);
+}
+header>.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+.menu_header{
+    display: flex;
+    gap: 20px;
+}
+.menu_header>a{
+    color: white;
+}
+.menu_header>a:hover{
+    color: white;
+}
+.menu_left{
+    min-height: 100px;
+    border: 1px solid;
+}
+.menu_right,.menu_left{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+.menu_left>h2,.menu_right>h2{
+    padding: 10px 20px;
+    color: white;
+    background: var(--primaryColor);
+}
+.menu_left ul>li>a{
+    padding: 10px 20px;
+    border-bottom: 1px solid;
+}
+.menu_right{
+    min-height: 100px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+table{
+    font-size: 10px;
+    border: 1px solid #cbcbcb;
+    flex: 1;
+    text-align: center;
+}
+.shoe_name{
+    text-align: left;
+}
+.price{
+    color: red;
+    font-weight: 700;
+}
+.btn_add{
+    margin: 10px 0;
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    float: right;
+}
+.btn_add:hover{
+    color: white;
+    background: var(--primaryColor);
+}
+.option>a{
+    display: inline;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.option>a:hover{
+    background: #4b4bff;
+    color: white;
+}
+.content{
+    display: flex;
+    padding: 0 20px 10px 20px;
+    flex-direction: column;
+}
+.addShoe{
+    max-width: 500px;
+}
+.addShoe button{
+    background-color: #313131;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addShoe button:hover{
+    background: var(--primaryColor);
+}
+.form-control{
+    display: flex;
+    margin: 10px 0;
+}
+.form-control>label{
+    flex: 1;
+    padding: 7px 10px;
+}
+.form-control input[type=text]{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 1px ;
+    border-radius: 5px;
+    padding-left: 10px;
+    flex: 3;
+}
+.form-control input[type=file]{
+    flex: 3;
+}
+.form-control select{
+    flex: 3;
+}
+table{
+    padding: 10px 0;
+}
+.navigate-btn{
+    box-shadow: 0 0 0 1px white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.navigate-btn:hover{
+    background: white;
+    color: var(--primaryColor) !important;
+    box-shadow: 0 0 4px blueviolet;
+}
