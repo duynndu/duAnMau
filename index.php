@@ -264,6 +264,29 @@ switch ($action) {
         include './view/listOrder.php';
         break;
     }
+    case 'updateAcc':{
+        if($_SERVER['REQUEST_METHOD']=="POST"){
+            print_r($_POST);
+            updateData('users',$_POST,$userID);
+            header('location:'.$_SERVER['REQUEST_URI']);
+        }
+        include 'view/auth/updateAcc.php';
+        break;
+    }
+    case 'forgotPassword':{
+        if($_SERVER['REQUEST_METHOD']=='POST'){
+            $equal=getDataBy('users',[
+                'email'=>$_POST['email']
+            ]);
+            if($equal){
+                echo '<script>alert("Mật khẩu của bạn là '.$equal['password'].'")</script>';
+            }else{
+                echo '<script>alert("không tìm thấy")</script>';
+            }
+        }
+        include 'view/auth/forgotPassword.php';
+        break;
+    }
 }
 include 'view/footer.php';
 ?>

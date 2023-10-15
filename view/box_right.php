@@ -5,7 +5,9 @@
         <div class="box_content form_account">
             <a href="index.php?action=cart">Giỏ hàng của bạn</a><br>
             <a href="index.php?action=listOrder">Đơn hàng của bạn</a><br>
+            <a href="index.php?action=forgotPassword">Quên mật khẩu</a><br>
             <?php if($userID){?>
+                <a href="index.php?action=updateAcc">Update tài khoản</a><br>
                 <?php if($user['role']){?>
                     <a href="./admin/index.php">Vào trang Admin</a> <br>
                 <?php }?>
